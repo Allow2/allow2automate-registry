@@ -1,0 +1,64 @@
+{
+  "id": "allow2automate-ssh",
+  "name": "@allow2/allow2automate-ssh",
+  "shortName": "ssh",
+  "version": "0.0.2",
+  "description": "Enable Allow2Automate the ability to use ssh to configure devices",
+  "publisher": "allow2",
+  "author": "Allow2",
+  "category": "connectivity",
+  "keywords": [
+    "allow2automate",
+    "allow2",
+    "ssh",
+    "remote",
+    "terminal",
+    "device control"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-ssh"
+  },
+  "bugs": {
+    "url": "https://github.com/Allow2/allow2automate-ssh/issues"
+  },
+  "homepage": "https://github.com/Allow2/allow2automate-ssh#readme",
+  "main": "./dist/index.js",
+  "releases": {
+    "latest": "0.0.2",
+    "versions": {
+      "0.0.2": {
+        "published": "2024-01-01T00:00:00Z",
+        "changelog": "Updated release"
+      }
+    }
+  },
+  "compatibility": {
+    "automate": ">=2.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "simple-ssh": "^1.0.0"
+  },
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/Allow2/allow2automate-ssh.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-ssh.git#v0.0.2"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresCredentials": true,
+    "requiresNetwork": true,
+    "platform": ["win32", "darwin", "linux"],
+    "verified": true,
+    "featured": true,
+    "security": {
+      "notes": "Stores SSH credentials securely in keychain"
+    }
+  },
+  "screenshots": [],
+  "documentation": "https://github.com/Allow2/allow2automate-ssh#readme",
+  "support": "https://github.com/Allow2/allow2automate-ssh/issues",
+  "license": "MIT"
+}

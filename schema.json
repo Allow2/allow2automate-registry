@@ -1,0 +1,212 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Allow2Automate Plugin Registry Schema",
+  "description": "Schema for the Allow2Automate plugin registry",
+  "type": "object",
+  "required": ["version", "plugins"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Registry version following semver"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last registry update"
+    },
+    "plugins": {
+      "type": "array",
+      "description": "Array of plugin definitions",
+      "items": {
+        "$ref": "#/definitions/plugin"
+      }
+    },
+    "categories": {
+      "type": "object",
+      "description": "Plugin category definitions",
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "$ref": "#/definitions/category"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "plugin": {
+      "type": "object",
+      "required": ["id", "name", "version", "description", "repository", "pluginFile"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "description": "Unique plugin identifier (npm package name)"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full plugin name"
+        },
+        "shortName": {
+          "type": "string",
+          "description": "Short display name"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Plugin version following semver"
+        },
+        "description": {
+          "type": "string",
+          "description": "Plugin description"
+        },
+        "publisher": {
+          "type": "string",
+          "description": "Publisher/organization name"
+        },
+        "author": {
+          "type": "string",
+          "description": "Author name"
+        },
+        "category": {
+          "type": "string",
+          "description": "Primary category"
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Search keywords"
+        },
+        "repository": {
+          "type": "object",
+          "required": ["type", "url"],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["git"]
+            },
+            "url": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "main": {
+          "type": "string",
+          "description": "Main entry point file"
+        },
+        "releases": {
+          "type": "object",
+          "properties": {
+            "latest": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+\\.\\d+$"
+            }
+          }
+        },
+        "compatibility": {
+          "type": "object",
+          "properties": {
+            "automate": {
+              "type": "string",
+              "description": "Compatible Automate versions (semver range)"
+            },
+            "node": {
+              "type": "string",
+              "description": "Required Node.js version (semver range)"
+            }
+          }
+        },
+        "dependencies": {
+          "type": "object",
+          "description": "NPM dependencies",
+          "patternProperties": {
+            "^[a-z0-9-@/]+$": {
+              "type": "string"
+            }
+          }
+        },
+        "installation": {
+          "type": "object",
+          "properties": {
+            "npm": {
+              "type": "string",
+              "description": "NPM install command"
+            },
+            "manual": {
+              "type": "string",
+              "description": "Manual installation instructions"
+            }
+          }
+        },
+        "metadata": {
+          "type": "object",
+          "description": "Additional plugin metadata",
+          "properties": {
+            "hasGUI": {
+              "type": "boolean",
+              "description": "Has graphical user interface"
+            },
+            "hasConfig": {
+              "type": "boolean",
+              "description": "Requires configuration"
+            },
+            "requiresCredentials": {
+              "type": "boolean",
+              "description": "Requires user credentials"
+            },
+            "requiresNetwork": {
+              "type": "boolean",
+              "description": "Requires network access"
+            },
+            "platform": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["win32", "darwin", "linux"]
+              },
+              "description": "Supported platforms"
+            },
+            "verified": {
+              "type": "boolean",
+              "description": "Officially verified by Allow2"
+            },
+            "featured": {
+              "type": "boolean",
+              "description": "Featured plugin"
+            }
+          }
+        },
+        "namespace": {
+          "type": "string",
+          "pattern": "^@[a-z0-9-]+$",
+          "description": "Publisher namespace (e.g., @allow2, @mcafee)"
+        },
+        "pluginFile": {
+          "type": "string",
+          "pattern": "^@[a-z0-9-]+/[a-z0-9.-]+\\.json$",
+          "description": "Path to plugin file within registry (e.g., @allow2/plugin.json)"
+        }
+      }
+    },
+    "category": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Category display name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Category description"
+        }
+      }
+    }
+  }
+}

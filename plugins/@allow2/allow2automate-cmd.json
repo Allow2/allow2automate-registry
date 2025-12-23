@@ -1,0 +1,46 @@
+{
+  "id": "allow2automate-cmd",
+  "name": "@allow2/allow2automate-cmd",
+  "shortName": "cmd",
+  "version": "0.0.2",
+  "description": "Enable Allow2Automate the ability to run cmds and scripts on the local device",
+  "publisher": "allow2",
+  "author": "Allow2",
+  "category": "utilities",
+  "keywords": [
+    "allow2automate",
+    "allow2",
+    "cmd",
+    "command",
+    "script",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-cmd"
+  },
+  "bugs": {
+    "url": "https://github.com/Allow2/allow2automate-cmd/issues"
+  },
+  "homepage": "https://github.com/Allow2/allow2automate-cmd#readme",
+  "main": "./dist/index.js",
+  "releases": {
+    "latest": "0.0.2"
+  },
+  "compatibility": {
+    "automate": ">=2.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/Allow2/allow2automate-cmd.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-cmd.git#v0.0.2"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresPermissions": true,
+    "platform": ["win32", "darwin", "linux"]
+  }
+}

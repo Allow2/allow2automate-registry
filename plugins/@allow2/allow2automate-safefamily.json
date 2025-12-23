@@ -1,0 +1,54 @@
+{
+  "id": "allow2automate-safefamily",
+  "name": "allow2automate-safefamily",
+  "shortName": "Safe Family",
+  "version": "1.0.0",
+  "description": "Enable Allow2Automate management of McAfee Safe Family parental controls",
+  "publisher": "mcafee",
+  "author": "McAfee",
+  "category": "parental-controls",
+  "keywords": [
+    "allow2automate",
+    "mcafee",
+    "safefamily",
+    "parental controls",
+    "security"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McAfee/allow2automate-safefamily"
+  },
+  "main": "./index.js",
+  "releases": {
+    "latest": "1.0.0",
+    "versions": {
+      "1.0.0": {
+        "published": "2024-01-01T00:00:00Z",
+        "changelog": "Initial release"
+      }
+    }
+  },
+  "compatibility": {
+    "automate": ">=1.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/McAfee/allow2automate-safefamily.git",
+    "install_url": "git+https://github.com/McAfee/allow2automate-safefamily.git#v1.0.0"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresCredentials": true,
+    "requiresNetwork": true,
+    "platform": ["win32", "darwin", "linux"],
+    "verified": false,
+    "featured": false
+  },
+  "screenshots": [],
+  "documentation": "https://github.com/McAfee/allow2automate-safefamily#readme",
+  "support": "https://github.com/McAfee/allow2automate-safefamily/issues",
+  "license": "MIT"
+}

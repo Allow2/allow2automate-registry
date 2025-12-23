@@ -1,0 +1,378 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "lastUpdated": "2025-12-23T10:18:00Z",
+  "plugins": [
+    {
+      "id": "allow2automate-battle.net",
+      "name": "@allow2/allow2automate-battle.net",
+      "shortName": "battle.net",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-battle.net.json",
+      "version": "0.0.2",
+      "description": "Enable Allow2Automate management of Battle.Net parental controls",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "gaming",
+      "keywords": [
+        "allow2automate",
+        "battle.net",
+        "wow",
+        "world of warcraft",
+        "parental controls"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-battle.net"
+      },
+      "bugs": {
+        "url": "https://github.com/Allow2/allow2automate-battle.net/issues"
+      },
+      "homepage": "https://github.com/Allow2/allow2automate-battle.net#readme",
+      "main": "./dist/index.js",
+      "releases": {
+        "latest": "0.0.2"
+      },
+      "compatibility": {
+        "automate": ">=2.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {},
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-battle.net.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-battle.net.git#v0.0.2"
+      },
+      "metadata": {
+        "hasGUI": true,
+        "hasConfig": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    },
+    {
+      "id": "allow2automate-ssh",
+      "name": "@allow2/allow2automate-ssh",
+      "shortName": "ssh",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-ssh.json",
+      "version": "0.0.2",
+      "description": "Enable Allow2Automate the ability to use ssh to configure devices",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "connectivity",
+      "keywords": [
+        "allow2automate",
+        "allow2",
+        "ssh",
+        "remote",
+        "terminal",
+        "device control"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-ssh"
+      },
+      "bugs": {
+        "url": "https://github.com/Allow2/allow2automate-ssh/issues"
+      },
+      "homepage": "https://github.com/Allow2/allow2automate-ssh#readme",
+      "main": "./dist/index.js",
+      "releases": {
+        "latest": "0.0.2"
+      },
+      "compatibility": {
+        "automate": ">=2.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {
+        "simple-ssh": "^1.0.0"
+      },
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-ssh.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-ssh.git#v0.0.2"
+      },
+      "metadata": {
+        "hasGUI": true,
+        "hasConfig": true,
+        "requiresCredentials": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    },
+    {
+      "id": "allow2automate-wemo",
+      "name": "@allow2/allow2automate-wemo",
+      "shortName": "wemo",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-wemo.json",
+      "version": "0.0.4",
+      "description": "Enable Allow2Automate the ability to control wemo devices",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "iot",
+      "keywords": [
+        "allow2automate",
+        "allow2",
+        "wemo",
+        "smart home",
+        "iot"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-wemo"
+      },
+      "bugs": {
+        "url": "https://github.com/Allow2/allow2automate-wemo/issues"
+      },
+      "homepage": "https://github.com/Allow2/allow2automate-wemo#readme",
+      "main": "./dist/index.js",
+      "releases": {
+        "latest": "0.0.4"
+      },
+      "compatibility": {
+        "automate": ">=2.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {
+        "wemo-client": "^0.15.0"
+      },
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-wemo.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-wemo.git#v0.0.4"
+      },
+      "metadata": {
+        "hasGUI": true,
+        "hasConfig": true,
+        "requiresNetwork": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    },
+    {
+      "id": "allow2automate-safefamily",
+      "name": "@allow2/allow2automate-safefamily",
+      "shortName": "Safe Family",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-safefamily.json",
+      "version": "1.0.0",
+      "description": "Enable Allow2Automate management of McAfee Safe Family parental controls",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "parental-controls",
+      "keywords": [
+        "allow2automate",
+        "mcafee",
+        "safefamily",
+        "parental controls",
+        "security"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-safefamily"
+      },
+      "main": "./index.js",
+      "releases": {
+        "latest": "1.0.0"
+      },
+      "compatibility": {
+        "automate": ">=1.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {},
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-safefamily.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-safefamily.git#v1.0.0"
+      },
+      "metadata": {
+        "hasGUI": true,
+        "hasConfig": true,
+        "requiresCredentials": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    },
+    {
+      "id": "allow2automate-cmd",
+      "name": "@allow2/allow2automate-cmd",
+      "shortName": "cmd",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-cmd.json",
+      "version": "0.0.2",
+      "description": "Enable Allow2Automate the ability to run cmds and scripts on the local device",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "utilities",
+      "keywords": [
+        "allow2automate",
+        "allow2",
+        "cmd",
+        "command",
+        "script",
+        "automation"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-cmd"
+      },
+      "bugs": {
+        "url": "https://github.com/Allow2/allow2automate-cmd/issues"
+      },
+      "homepage": "https://github.com/Allow2/allow2automate-cmd#readme",
+      "main": "./dist/index.js",
+      "releases": {
+        "latest": "0.0.2"
+      },
+      "compatibility": {
+        "automate": ">=2.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {},
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-cmd.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-cmd.git#v0.0.2"
+      },
+      "metadata": {
+        "hasGUI": true,
+        "hasConfig": true,
+        "requiresPermissions": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    },
+    {
+      "id": "allow2automate-playstation",
+      "name": "@allow2/allow2automate-playstation",
+      "shortName": "playstation",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-playstation.json",
+      "version": "0.0.1",
+      "description": "Control PlayStation Network access with Allow2 parental controls",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "gaming",
+      "keywords": [
+        "allow2automate",
+        "playstation",
+        "psn",
+        "gaming",
+        "parental-controls"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-playstation"
+      },
+      "bugs": {
+        "url": "https://github.com/Allow2/allow2automate-playstation/issues"
+      },
+      "homepage": "https://github.com/Allow2/allow2automate-playstation#readme",
+      "main": "./dist/index.js",
+      "releases": {
+        "latest": "0.0.1"
+      },
+      "compatibility": {
+        "automate": ">=2.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {},
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-playstation.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-playstation.git#v0.0.1"
+      },
+      "metadata": {
+        "hasGUI": true,
+        "hasConfig": true,
+        "requiresCredentials": true,
+        "requiresNetwork": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    },
+    {
+      "id": "allow2automate-plugin",
+      "name": "@allow2/allow2automate-plugin",
+      "shortName": "plugin",
+      "namespace": "@allow2",
+      "pluginFile": "plugins/@allow2/allow2automate-plugin.json",
+      "version": "0.0.1",
+      "description": "Base template to build your own plugins",
+      "publisher": "allow2",
+      "author": "Allow2",
+      "category": "utilities",
+      "keywords": [
+        "allow2automate",
+        "allow2",
+        "template",
+        "plugin",
+        "starter",
+        "development"
+      ],
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Allow2/allow2automate-plugin"
+      },
+      "bugs": {
+        "url": "https://github.com/Allow2/allow2automate-plugin/issues"
+      },
+      "homepage": "https://github.com/Allow2/allow2automate-plugin#readme",
+      "main": "./dist/index.js",
+      "releases": {
+        "latest": "0.0.1"
+      },
+      "compatibility": {
+        "automate": ">=2.0.0",
+        "node": ">=14.0.0"
+      },
+      "dependencies": {},
+      "installation": {
+        "type": "git",
+        "url": "git+https://github.com/Allow2/allow2automate-plugin.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-plugin.git#v0.0.1"
+      },
+      "metadata": {
+        "hasGUI": false,
+        "hasConfig": false,
+        "isTemplate": true,
+        "platform": ["win32", "darwin", "linux"]
+      }
+    }
+  ],
+  "namespaces": {
+    "@allow2": {
+      "name": "Allow2",
+      "description": "Official Allow2 plugins for parental controls and device management",
+      "homepage": "https://github.com/Allow2",
+      "totalPlugins": 7
+    }
+  },
+  "categories": {
+    "gaming": {
+      "name": "Gaming",
+      "description": "Plugins for gaming platform parental controls"
+    },
+    "connectivity": {
+      "name": "Connectivity",
+      "description": "Plugins for remote device connectivity and control"
+    },
+    "iot": {
+      "name": "IoT & Smart Home",
+      "description": "Plugins for Internet of Things and smart home device control"
+    },
+    "parental-controls": {
+      "name": "Parental Controls",
+      "description": "Plugins for third-party parental control systems"
+    },
+    "utilities": {
+      "name": "Utilities",
+      "description": "Utility plugins for automation, scripting, and plugin development"
+    }
+  },
+  "metadata": {
+    "totalPlugins": 7,
+    "totalNamespaces": 1,
+    "namespaceOrganization": {
+      "enabled": true,
+      "structure": "plugins/@namespace/plugin-name.json",
+      "description": "Plugins are organized by namespace folders for better management and scalability"
+    }
+  }
+}

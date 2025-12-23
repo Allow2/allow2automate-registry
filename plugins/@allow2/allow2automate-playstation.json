@@ -1,0 +1,46 @@
+{
+  "id": "allow2automate-playstation",
+  "name": "@allow2/allow2automate-playstation",
+  "shortName": "playstation",
+  "version": "0.0.1",
+  "description": "Control PlayStation Network access with Allow2 parental controls",
+  "publisher": "allow2",
+  "author": "Allow2",
+  "category": "gaming",
+  "keywords": [
+    "allow2automate",
+    "playstation",
+    "psn",
+    "gaming",
+    "parental-controls"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-playstation"
+  },
+  "bugs": {
+    "url": "https://github.com/Allow2/allow2automate-playstation/issues"
+  },
+  "homepage": "https://github.com/Allow2/allow2automate-playstation#readme",
+  "main": "./dist/index.js",
+  "releases": {
+    "latest": "0.0.1"
+  },
+  "compatibility": {
+    "automate": ">=2.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/Allow2/allow2automate-playstation.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-playstation.git#v0.0.1"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresCredentials": true,
+    "requiresNetwork": true,
+    "platform": ["win32", "darwin", "linux"]
+  }
+}
