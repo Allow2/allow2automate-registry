@@ -1,0 +1,73 @@
+{
+  "id": "allow2automate-microsoft-family-safety",
+  "name": "@allow2/allow2automate-microsoft-family-safety",
+  "shortName": "microsoft-family-safety",
+  "version": "0.0.1",
+  "description": "Enable Allow2Automate to monitor and control Microsoft Family Safety features",
+  "publisher": "allow2",
+  "author": "Allow2",
+  "category": "parental-controls",
+  "keywords": [
+    "allow2automate",
+    "allow2",
+    "microsoft",
+    "family safety",
+    "parental controls",
+    "screen time"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-microsoft-family-safety"
+  },
+  "bugs": {
+    "url": "https://github.com/Allow2/allow2automate-microsoft-family-safety/issues"
+  },
+  "homepage": "https://github.com/Allow2/allow2automate-microsoft-family-safety#readme",
+  "main": "./dist/index.js",
+  "releases": {
+    "latest": "0.0.1",
+    "versions": {
+      "0.0.1": {
+        "published": "2024-12-25T00:00:00Z",
+        "changelog": "Initial release with Microsoft Family Safety integration"
+      }
+    }
+  },
+  "compatibility": {
+    "automate": ">=2.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/Allow2/allow2automate-microsoft-family-safety.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-microsoft-family-safety.git#v0.0.1"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresNetwork": true,
+    "platform": ["win32", "darwin", "linux"],
+    "verified": true,
+    "featured": false
+  },
+  "screenshots": [],
+  "documentation": "https://github.com/Allow2/allow2automate-microsoft-family-safety#readme",
+  "support": "https://github.com/Allow2/allow2automate-microsoft-family-safety/issues",
+  "license": "MIT",
+  "features": [
+    "Microsoft account authentication",
+    "Family member monitoring",
+    "Screen time tracking",
+    "Activity reports",
+    "Screen time request management",
+    "Device override controls"
+  ],
+  "permissions": {
+    "network": "Required for Microsoft Family Safety API communication",
+    "configuration": "Required to store authentication tokens and settings",
+    "storage": "Required to cache family member data and activity reports"
+  }
+}

@@ -130,6 +130,28 @@ Each plugin has its own JSON file within a namespace folder:
 - **installation** - Git installation URLs
 - **metadata** - Additional flags
 
+## 📋 Template Plugins
+
+**Important Note:** Template plugins (like `allow2automate-plugin`) are **not listed in the registry**. These serve as starter kits for developers to create their own plugins and are maintained separately from production plugins to avoid confusion.
+
+### Using Templates
+
+To create a new plugin based on the official template:
+
+```bash
+# Clone the template repository
+git clone https://github.com/Allow2/allow2automate-plugin.git my-new-plugin
+cd my-new-plugin
+
+# Update package.json with your plugin details
+# Implement your plugin functionality
+# Build and test locally
+
+# When ready for production, submit to registry
+```
+
+Templates remain available as GitHub repositories but are excluded from the plugin marketplace to ensure users only see production-ready plugins.
+
 ## 🆕 Adding New Plugins
 
 ### For Plugin Authors

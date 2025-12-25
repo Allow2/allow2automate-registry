@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schema.json",
+  "id": "allow2automate-smart-timer",
+  "name": "@allow2/allow2automate-smart-timer",
+  "shortName": "smart-timer",
+  "namespace": "@allow2",
+  "version": "1.0.0",
+  "description": "Smart timer plugin for Allow2Automate with countdown and scheduling features",
+  "publisher": "allow2",
+  "author": "Allow2",
+  "license": "MIT",
+  "category": "utilities",
+  "keywords": [
+    "allow2automate",
+    "allow2",
+    "timer",
+    "countdown",
+    "scheduling",
+    "automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-smart-timer"
+  },
+  "bugs": {
+    "url": "https://github.com/Allow2/allow2automate-smart-timer/issues"
+  },
+  "homepage": "https://github.com/Allow2/allow2automate-smart-timer#readme",
+  "main": "./dist/index.js",
+  "releases": {
+    "latest": "1.0.0"
+  },
+  "compatibility": {
+    "automate": ">=2.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.9",
+    "node-cron": "^3.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0",
+    "@material-ui/core": "^4.0.0",
+    "@material-ui/icons": "^4.0.0"
+  },
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/Allow2/allow2automate-smart-timer.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-smart-timer.git#v1.0.0"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresNotifications": true,
+    "platform": ["win32", "darwin", "linux"],
+    "compliance": {
+      "compliant": true,
+      "validationErrors": [],
+      "validationWarnings": [],
+      "lastChecked": "2025-12-25T00:00:00Z"
+    }
+  },
+  "allow2automate": {
+    "plugin": true,
+    "pluginId": "allow2automate-smart-timer",
+    "displayName": "Smart Timer",
+    "category": "Utilities",
+    "permissions": [
+      "configuration",
+      "notifications"
+    ],
+    "minAppVersion": "2.0.0",
+    "api": {
+      "actions": [
+        {
+          "id": "startTimer",
+          "name": "Start Timer",
+          "description": "Start a countdown timer"
+        },
+        {
+          "id": "stopTimer",
+          "name": "Stop Timer",
+          "description": "Stop the current timer"
+        },
+        {
+          "id": "createSchedule",
+          "name": "Create Schedule",
+          "description": "Create a scheduled timer event"
+        },
+        {
+          "id": "deleteSchedule",
+          "name": "Delete Schedule",
+          "description": "Remove a scheduled timer"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "timerComplete",
+          "name": "Timer Complete",
+          "description": "Triggered when a timer completes"
+        },
+        {
+          "id": "timerStarted",
+          "name": "Timer Started",
+          "description": "Triggered when a timer is started"
+        },
+        {
+          "id": "scheduleTriggered",
+          "name": "Schedule Triggered",
+          "description": "Triggered when a scheduled event fires"
+        }
+      ]
+    }
+  }
+}

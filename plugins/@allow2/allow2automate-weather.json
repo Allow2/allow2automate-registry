@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema.json",
+  "id": "allow2automate-weather",
+  "name": "@allow2/allow2automate-weather",
+  "shortName": "weather",
+  "namespace": "@allow2",
+  "version": "1.0.0",
+  "description": "Weather dashboard plugin for Allow2Automate with current conditions and forecasts",
+  "publisher": "allow2",
+  "author": "Allow2",
+  "license": "MIT",
+  "category": "utilities",
+  "keywords": [
+    "allow2automate",
+    "allow2",
+    "weather",
+    "dashboard",
+    "forecast",
+    "conditions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-weather"
+  },
+  "bugs": {
+    "url": "https://github.com/Allow2/allow2automate-weather/issues"
+  },
+  "homepage": "https://github.com/Allow2/allow2automate-weather#readme",
+  "main": "./dist/index.js",
+  "releases": {
+    "latest": "1.0.0"
+  },
+  "compatibility": {
+    "automate": ">=2.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.13.9",
+    "axios": "^0.21.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0",
+    "@material-ui/core": "^4.0.0",
+    "@material-ui/icons": "^4.0.0"
+  },
+  "installation": {
+    "type": "git",
+    "url": "git+https://github.com/Allow2/allow2automate-weather.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-weather.git#v1.0.0"
+  },
+  "metadata": {
+    "hasGUI": true,
+    "hasConfig": true,
+    "requiresNetwork": true,
+    "platform": ["win32", "darwin", "linux"],
+    "compliance": {
+      "compliant": true,
+      "validationErrors": [],
+      "validationWarnings": [],
+      "lastChecked": "2025-12-25T00:00:00Z"
+    }
+  },
+  "allow2automate": {
+    "plugin": true,
+    "pluginId": "allow2automate-weather",
+    "displayName": "Weather Dashboard",
+    "category": "Utilities",
+    "permissions": [
+      "network",
+      "configuration"
+    ],
+    "minAppVersion": "2.0.0",
+    "api": {
+      "actions": [
+        {
+          "id": "getCurrentWeather",
+          "name": "Get Current Weather",
+          "description": "Fetch current weather conditions"
+        },
+        {
+          "id": "getForecast",
+          "name": "Get Weather Forecast",
+          "description": "Fetch weather forecast for upcoming days"
+        },
+        {
+          "id": "setLocation",
+          "name": "Set Location",
+          "description": "Configure weather location"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "weatherUpdate",
+          "name": "Weather Updated",
+          "description": "Triggered when weather data is refreshed"
+        },
+        {
+          "id": "severeWeatherAlert",
+          "name": "Severe Weather Alert",
+          "description": "Triggered when severe weather is detected"
+        }
+      ]
+    }
+  }
+}

@@ -24,7 +24,13 @@
   "homepage": "https://github.com/Allow2/allow2automate-playstation#readme",
   "main": "./dist/index.js",
   "releases": {
-    "latest": "0.0.1"
+    "latest": "0.0.1",
+    "versions": {
+      "0.0.1": {
+        "published": "2025-12-23T00:00:00Z",
+        "changelog": "Initial release - PlayStation Network integration with Allow2 parental controls"
+      }
+    }
   },
   "compatibility": {
     "automate": ">=2.0.0",
@@ -41,6 +47,12 @@
     "hasConfig": true,
     "requiresCredentials": true,
     "requiresNetwork": true,
-    "platform": ["win32", "darwin", "linux"]
-  }
+    "platform": ["win32", "darwin", "linux"],
+    "verified": true,
+    "featured": false
+  },
+  "screenshots": [],
+  "documentation": "https://github.com/Allow2/allow2automate-playstation#readme",
+  "support": "https://github.com/Allow2/allow2automate-playstation/issues",
+  "license": "MIT"
 }
