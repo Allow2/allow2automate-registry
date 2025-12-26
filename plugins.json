@@ -105,7 +105,7 @@
       "shortName": "wemo",
       "namespace": "@allow2",
       "pluginFile": "plugins/@allow2/allow2automate-wemo.json",
-      "version": "0.0.4",
+      "version": "0.0.6",
       "description": "Enable Allow2Automate the ability to control wemo devices",
       "publisher": "allow2",
       "author": "Allow2",
@@ -127,7 +127,7 @@
       "homepage": "https://github.com/Allow2/allow2automate-wemo#readme",
       "main": "./dist/index.js",
       "releases": {
-        "latest": "0.0.4"
+        "latest": "0.0.6"
       },
       "compatibility": {
         "automate": ">=2.0.0",
@@ -139,7 +139,7 @@
       "installation": {
         "type": "git",
         "url": "git+https://github.com/Allow2/allow2automate-wemo.git",
-        "install_url": "git+https://github.com/Allow2/allow2automate-wemo.git#v0.0.4"
+        "install_url": "git+https://github.com/Allow2/allow2automate-wemo.git#v0.0.6"
       },
       "metadata": {
         "hasGUI": true,
