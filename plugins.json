@@ -293,7 +293,7 @@
       "name": "Allow2",
       "description": "Official Allow2 plugins for parental controls and device management",
       "homepage": "https://github.com/Allow2",
-      "totalPlugins": 9
+      "totalPlugins": 6
     }
   },
   "categories": {
@@ -319,7 +319,7 @@
     }
   },
   "metadata": {
-    "totalPlugins": 9,
+    "totalPlugins": 6,
     "totalNamespaces": 1,
     "namespaceOrganization": {
       "enabled": true,
