@@ -42,7 +42,7 @@
   "installation": {
     "type": "git",
     "url": "git+https://github.com/Allow2/allow2automate-wemo.git",
-    "install_url": "git+https://github.com/Allow2/allow2automate-wemo.git#v0.0.4"
+    "install_url": "git+https://github.com/Allow2/allow2automate-wemo.git#v0.0.6"
   },
   "metadata": {
     "hasGUI": true,

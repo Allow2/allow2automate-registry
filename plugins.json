@@ -1,7 +1,7 @@
 {
   "$schema": "./schema.json",
   "version": "1.0.0",
-  "lastUpdated": "2025-12-25T00:00:00Z",
+  "lastUpdated": "2025-12-27T00:00:00Z",
   "plugins": [
     {
       "id": "allow2automate-battle.net",
@@ -50,52 +50,47 @@
       }
     },
     {
-      "id": "allow2automate-ssh",
-      "name": "@allow2/allow2automate-ssh",
-      "shortName": "ssh",
+      "id": "allow2automate-nintendo-switch",
+      "name": "@allow2/allow2automate-nintendo-switch",
+      "shortName": "Nintendo Switch",
       "namespace": "@allow2",
-      "pluginFile": "plugins/@allow2/allow2automate-ssh.json",
+      "pluginFile": "plugins/@allow2/allow2automate-nintendo-switch.json",
       "version": "0.0.2",
-      "description": "Enable Allow2Automate the ability to use ssh to configure devices",
+      "description": "Enable Allow2Automate management of Nintendo Switch parental controls",
       "publisher": "allow2",
       "author": "Allow2",
-      "category": "connectivity",
+      "category": "gaming",
       "keywords": [
         "allow2automate",
-        "allow2",
-        "ssh",
-        "remote",
-        "terminal",
-        "device control"
+        "Nintendo",
+        "Nintendo Switch",
+        "parental controls"
       ],
       "repository": {
         "type": "git",
-        "url": "https://github.com/Allow2/allow2automate-ssh"
+        "url": "https://github.com/Allow2/allow2automate-nintendo-switch"
       },
       "bugs": {
-        "url": "https://github.com/Allow2/allow2automate-ssh/issues"
+        "url": "https://github.com/Allow2/allow2automate-nintendo-switch/issues"
       },
-      "homepage": "https://github.com/Allow2/allow2automate-ssh#readme",
+      "homepage": "https://github.com/Allow2/allow2automate-nintendo-switch#readme",
       "main": "./dist/index.js",
       "releases": {
-        "latest": "0.0.2"
+        "latest": "1.0.0"
       },
       "compatibility": {
         "automate": ">=2.0.0",
         "node": ">=14.0.0"
       },
-      "dependencies": {
-        "simple-ssh": "^1.0.0"
-      },
+      "dependencies": {},
       "installation": {
         "type": "git",
-        "url": "git+https://github.com/Allow2/allow2automate-ssh.git",
-        "install_url": "git+https://github.com/Allow2/allow2automate-ssh.git#v0.0.2"
+        "url": "git+https://github.com/Allow2/allow2automate-nintendo-switch.git",
+        "install_url": "git+https://github.com/Allow2/allow2automate-nintendo-switch.git#v1.0.0"
       },
       "metadata": {
         "hasGUI": true,
         "hasConfig": true,
-        "requiresCredentials": true,
         "platform": ["win32", "darwin", "linux"]
       }
     },
@@ -293,7 +288,7 @@
       "name": "Allow2",
       "description": "Official Allow2 plugins for parental controls and device management",
       "homepage": "https://github.com/Allow2",
-      "totalPlugins": 6
+      "totalPlugins": 5
     }
   },
   "categories": {
@@ -319,7 +314,7 @@
     }
   },
   "metadata": {
-    "totalPlugins": 6,
+    "totalPlugins": 5,
     "totalNamespaces": 1,
     "namespaceOrganization": {
       "enabled": true,
