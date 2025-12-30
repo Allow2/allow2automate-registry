@@ -39,16 +39,12 @@
   "definitions": {
     "plugin": {
       "type": "object",
-      "required": ["id", "name", "version", "description", "repository", "pluginFile"],
+      "required": ["name", "version", "description", "repository", "pluginFile"],
       "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "^[a-z0-9-]+$",
-          "description": "Unique plugin identifier (npm package name)"
-        },
         "name": {
           "type": "string",
-          "description": "Full plugin name"
+          "pattern": "^@[a-z0-9-]+/[a-z0-9.-]+$",
+          "description": "Unique scoped plugin name (e.g., @allow2/allow2automate-wemo) - THIS IS THE PRIMARY KEY"
         },
         "shortName": {
           "type": "string",

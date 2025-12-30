@@ -1,0 +1,23 @@
+{
+  "name": "@allow2/plugin-registry",
+  "version": "1.0.0",
+  "description": "Allow2Automate Plugin Registry Builder",
+  "private": true,
+  "scripts": {
+    "build": "node build-registry.js",
+    "build:verify": "node build-registry.js --verify",
+    "validate": "node build-registry.js --validate",
+    "simplify": "node simplify-plugins.js"
+  },
+  "keywords": [
+    "allow2automate",
+    "registry",
+    "plugins"
+  ],
+  "author": "Allow2",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/automate"
+  }
+}
