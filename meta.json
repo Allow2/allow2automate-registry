@@ -1,0 +1,40 @@
+{
+  "$schema": "./schema.json",
+  "version": "1.0.0",
+  "featured": {
+    "@allow2/allow2automate-battle.net" : {}
+  },
+  "categories": {
+    "gaming": {
+      "name": "Gaming",
+      "description": "Plugins for gaming platform parental controls"
+    },
+    "connectivity": {
+      "name": "Connectivity",
+      "description": "Plugins for remote device connectivity and control"
+    },
+    "iot": {
+      "name": "IoT & Smart Home",
+      "description": "Plugins for Internet of Things and smart home device control"
+    },
+    "Parental controls": {
+      "name": "Parental Controls",
+      "description": "Plugins for third-party parental control systems"
+    },
+    "utilities": {
+      "name": "Utilities",
+      "description": "Utility plugins for automation, scripting, and plugin development"
+    }
+  },
+  "metadata": {
+    "namespaceOrganization": {
+      "enabled": true,
+      "structure": "plugins/@namespace/plugin-name.json",
+      "description": "Plugins are organized by namespace folders for better management and scalability"
+    },
+    "templates": {
+      "excluded": true,
+      "description": "Template plugins (like allow2automate-plugin) are maintained as starter kits but excluded from the registry to avoid confusion with production plugins"
+    }
+  }
+}

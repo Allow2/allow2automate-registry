@@ -1,5 +1,5 @@
 {
-  "name": "@allow2/allow2automate-microsoft-family-safety",
+  "name": "@allow2/allow2automate-microsoft-family",
   "shortName": "Microsoft Family Safety",
   "version": "0.0.1",
   "description": "Enable Allow2Automate to monitor and control Microsoft Family Safety features",
@@ -16,12 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Allow2/allow2automate-microsoft-family-safety"
+    "url": "https://github.com/Allow2/allow2automate-microsoft-family"
   },
   "bugs": {
-    "url": "https://github.com/Allow2/allow2automate-microsoft-family-safety/issues"
+    "url": "https://github.com/Allow2/allow2automate-microsoft-family/issues"
   },
-  "homepage": "https://github.com/Allow2/allow2automate-microsoft-family-safety#readme",
+  "homepage": "https://github.com/Allow2/allow2automate-microsoft-family#readme",
   "main": "./dist/index.js",
   "releases": {
     "latest": "0.0.1",
@@ -41,8 +41,8 @@
   },
   "installation": {
     "type": "git",
-    "url": "git+https://github.com/Allow2/allow2automate-microsoft-family-safety.git",
-    "install_url": "git+https://github.com/Allow2/allow2automate-microsoft-family-safety.git#v0.0.1"
+    "url": "git+https://github.com/Allow2/allow2automate-microsoft-family.git",
+    "install_url": "git+https://github.com/Allow2/allow2automate-microsoft-family.git#v0.0.1"
   },
   "metadata": {
     "hasGUI": true,
@@ -53,8 +53,8 @@
     "featured": false
   },
   "screenshots": [],
-  "documentation": "https://github.com/Allow2/allow2automate-microsoft-family-safety#readme",
-  "support": "https://github.com/Allow2/allow2automate-microsoft-family-safety/issues",
+  "documentation": "https://github.com/Allow2/allow2automate-microsoft-family#readme",
+  "support": "https://github.com/Allow2/allow2automate-microsoft-family/issues",
   "license": "MIT",
   "features": [
     "Microsoft account authentication",

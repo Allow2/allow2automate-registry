@@ -1,5 +1,17 @@
 {
-  "namespace": "@allow2",
-  "name": "allow2automate-battle.net",
-  "repository": "https://github.com/Allow2/allow2automate-battle.net"
+  "name": "@allow2/allow2automate-battle.net",
+  "shortName": "battle.net",
+  "version": "v0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allow2/allow2automate-battle.net"
+  },
+  "releases": {
+    "latest": "v0.0.2",
+    "versions": {
+      "v0.0.2": {
+        "install_url": "git+https://github.com/Allow2/allow2automate-battle.net.git#v0.0.2"
+      }
+    }
+  }
 }
